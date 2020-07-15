@@ -14,10 +14,94 @@ html {
 body {
     min-height: 100%;
     font: 1.5rem/1.6 'Open Sans', sans-serif;
+    background-color: rgb(204, 204, 204);
 }
 
 .container {
     margin: 0 auto;
     max-width: 1140px;
     width: 96%;
+}
+
+// Start
+.offer {
+    height: 60rem;
+    background-color: #f3f9ff;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    &__bg {
+        height: 60rem;
+        background-image: url(../img/bg.png);
+        // background: linear-gradient(
+        //     rgba(243, 249, 255, 0.7), 
+        //     rgba(243, 249, 255, 0.7)
+        // ),
+        // url(../img/bg.png);
+        background-repeat: no-repeat;
+        width: 50%;
+        z-index: 2;
+        &--grad {
+            height: 60rem;
+            width: 100%;
+            background: linear-gradient(to left, #f3f9ff, #f3f9ff85);
+            z-index: 3;
+        }
+    }
+    &__circle {
+        background-image: url(../img/circle-img.png);
+        // background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+        z-index: 6;
+        position: absolute;
+        top: 16rem;
+        left: 28rem;
+        &::before {
+            content: "";
+            display: block;
+            background-image: url(../img/circle-border.png);
+            width: 30rem; // last point was here
+            height: 30rem; // last point was here
+            // width: 40rem;
+            // height: 40rem;
+            // border: 2rem solid green;
+            // border-bottom: 0;
+            // border-right: 0;
+            // border-radius: 50% 50% 0 50%;
+            margin: -4rem;
+        }        
+        // outline: 2px dashed green;
+    }
+    &__feets {
+        background-image: url(../img/feets.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60rem;
+        height: 60rem;
+        z-index: 7;
+        position: absolute;
+        top: -10rem;
+        left: 15rem;
+    }
+}
+
+.waves {
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    z-index: 4;
+    top: 52rem;
+    right: 0rem;
+    // outline: 2px solid green;
+}
+
+.desc {
+    height: 70rem;
+    background-color: #fff;
+    z-index: 5;
 }
