@@ -1,0 +1,59 @@
+.offer {
+  height: 60rem;
+  background-color: #f3f9ff;
+  width: 100%;
+  z-index: 1;
+  position: relative; }
+  .offer__bg {
+    height: 60rem;
+    background-image: url(../img/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    z-index: 2; }
+    .offer__bg--grad {
+      height: 60rem;
+      width: 100%;
+      background: -webkit-gradient(linear, right top, left top, from(#f3f9ff), to(#f3f9ff85));
+      background: -o-linear-gradient(right, #f3f9ff, #f3f9ff85);
+      background: linear-gradient(to left, #f3f9ff, #f3f9ff85);
+      z-index: 3; }
+  .offer__circle {
+    background-image: url(../img/circle-border.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 56rem;
+    height: 56rem;
+    z-index: 6;
+    position: absolute;
+    top: 8rem;
+    left: 18rem; }
+  .offer__feets {
+    background-image: url(../img/feets.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 72rem;
+    height: 72rem;
+    z-index: 7;
+    position: absolute;
+    top: -20rem;
+    left: 10rem; }
+  .offer__medicine {
+    background-image: url(../img/medicine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64rem;
+    height: 64rem;
+    position: absolute;
+    top: 43rem;
+    left: 23rem;
+    z-index: 8; }
+  .offer__waves {
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    z-index: 4;
+    top: 58rem;
+    right: 0rem; }
