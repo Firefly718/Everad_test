@@ -583,6 +583,303 @@ body {
     position: absolute;
     top: 40.5rem;
     left: 123.8rem; }
+  .offer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+  .offer__order {
+    width: 25.5rem;
+    height: 54rem;
+    background-color: #fff;
+    border: 7px solid #a8ca3f;
+    border-radius: 15px;
+    z-index: 10; }
+  .offer__delivery {
+    width: 15rem;
+    height: 3.5rem;
+    background: -webkit-gradient(linear, right top, left top, from(#f3f8fd), to(#f5faff));
+    background: -o-linear-gradient(right, #f3f8fd, #f5faff);
+    background: linear-gradient(to left, #f3f8fd, #f5faff);
+    border: 7px solid #a8ca3f;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    margin: -0.7rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .offer__delivery span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    font-weight: 400;
+    font-family: "Roboto";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 1rem 0 0; }
+    .offer__delivery span::before {
+      content: '';
+      width: 3rem;
+      height: 2rem;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      background: url(../img/form/Delivery.svg);
+      margin: 0 .8rem; }
+  .offer__deficit {
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 2rem; }
+  .offer__deficit span {
+    color: #ff6b00; }
+  .offer__prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-top: 1.8rem;
+    color: #000; }
+  .offer__prices span {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+    font-family: "Roboto";
+    font-weight: 400; }
+  .offer__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .offer__price--old {
+      font-size: 34px;
+      line-height: 24px;
+      color: #0b0b0b;
+      font-weight: 300;
+      font-family: "Roboto";
+      margin-top: 1rem;
+      position: relative; }
+      .offer__price--old::before {
+        content: '';
+        display: block;
+        background: url(../img/form/cross.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 8rem;
+        height: 3rem;
+        position: absolute;
+        top: -.2rem;
+        left: -.2rem; }
+      .offer__price--old::after {
+        content: '₽'; }
+    .offer__price--new {
+      font-size: 34px;
+      color: #000000;
+      line-height: 24px;
+      font-family: "Roboto";
+      font-weight: 900;
+      background-color: #ffcb02;
+      width: 10.6rem;
+      height: 4rem;
+      border-radius: 4px;
+      margin: .2rem 0 1.5rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .offer__price--new::after {
+        content: '₽'; }
+  .offer__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative; }
+  .offer__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 22rem;
+    height: 6.4rem;
+    border-radius: 3rem;
+    background-color: #eef2f7;
+    margin-bottom: 1rem;
+    padding-left: 5rem; }
+    .offer__name::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/form/person.svg);
+      background-repeat: no-repeat;
+      width: 2rem;
+      height: 2.3rem;
+      background-size: contain;
+      top: 2rem;
+      left: 3rem; }
+  .offer__name input {
+    outline: none;
+    border: none;
+    background-color: #eef2f7;
+    width: 14rem; }
+  .offer__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 22rem;
+    height: 6.4rem;
+    border-radius: 3rem;
+    background-color: #eef2f7;
+    margin-bottom: 1rem;
+    padding-left: 5rem; }
+    .offer__phone::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/form/phone.svg);
+      background-repeat: no-repeat;
+      width: 2rem;
+      height: 2.3rem;
+      background-size: contain;
+      top: 9.5rem;
+      left: 3rem; }
+  .offer__phone input {
+    outline: none;
+    border: none;
+    background-color: #eef2f7;
+    width: 14rem; }
+  .offer__btn {
+    width: 22rem;
+    height: 6.4rem;
+    border-radius: 3rem;
+    background-color: #ffc002;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    border: 6px solid #ffc002;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #ffd34e;
+    box-shadow: inset 0px 0px 0px 2px #ffd34e;
+    outline: none;
+    font-size: 28px;
+    line-height: .6;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in; }
+    .offer__btn:hover, .offer__btn:focus, .offer__btn:active {
+      background-color: #a8ca3f;
+      border-color: #a8ca3f; }
+  .offer__btn span {
+    line-height: 0;
+    font-size: 1.7rem; }
+  .offer__count {
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    line-height: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center; }
+  .offer__count span {
+    color: #a8ca3f; }
+  .offer__secure {
+    background-color: #eef2f7;
+    font-size: 14px;
+    color: #666666;
+    line-height: 17px;
+    font-family: "Roboto";
+    font-weight: 400;
+    height: 4.4rem;
+    width: 100%;
+    margin-top: .9rem;
+    border-radius: 0 0 9px 9px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .offer__secure::before {
+      content: '';
+      width: 2rem;
+      height: 2rem;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      background: url(../img/form/secure.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 1rem; }
+  .offer__wrapper {
+    position: relative; }
+  .offer__doit {
+    background: url(../img/form/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5rem;
+    height: 23.4rem;
+    top: -36rem;
+    right: -3rem;
+    z-index: 50; }
+
+#new-price {
+  color: #000; }
+
+#firstLabel {
+  display: block;
+  position: absolute;
+  background: url(../img/form/person.svg);
+  width: 2rem;
+  height: 2.3rem;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  outline: 2px dashed red; }
 
 .desc {
   height: 94rem;

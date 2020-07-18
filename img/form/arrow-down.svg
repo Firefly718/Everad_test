@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 236" width="51" height="236">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #fd7532 } 
+	</style>
+	<g id="1">
+		<g id="форма">
+			<path id="Rectangle 30 copy" class="shp0" d="M7 2L10 2C10 2 50 42.65 50 114C50 185.15 10 227 10 227L7 227C7 227 47 185.3 47 114C47 42.8 7 2 7 2ZM18.82 228.01L1.53 234.38L3.3 215.72L18.82 228.01Z" />
+		</g>
+	</g>
+</svg>

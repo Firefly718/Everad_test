@@ -285,8 +285,332 @@ body {
         top: 40.5rem;
         left: 123.8rem;
     }
+    &__form {
+        display: flex;
+        align-items: stretch;
+    }
+    &__order {
+        width: 25.5rem;
+        height: 54rem;
+        background-color: #fff;
+        // outline: 2px dashed red;
+        border: 7px solid #a8ca3f;
+        // z-index: 500;
+        border-radius: 15px;
+        z-index: 10;
+    }
+    &__delivery {
+        width: 15rem;
+        height: 3.5rem;
+        background: linear-gradient(to left, #f3f8fd, #f5faff);
+        // outline: 2px dashed red;
+        border: 7px solid #a8ca3f;
+        border-top: none;
+        border-radius: 0 0 15px 15px;
+        // text-align: right;
+        margin: -0.7rem auto;
+        // vertical-align: bottom;
+        display: flex;
+        align-items: flex-start;
+        // justify-content: center;
+    }
+    &__delivery span {
+        // outline: 2px dashed green;
+        font-size: 16px;
+        line-height: 18px;
+        color: #444444;
+        font-weight: 400;
+        font-family: "Roboto";
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 1rem 0 0;
+        // padding-bottom: 6rem;
+        &::before {
+            content: '';
+            width: 3rem;
+            height: 2rem;
+            display: inline-flex;
+            // align-items: ;
+            // justify-content: center;
+            // outline: 2px dashed red;
+            background: url(../img/form/Delivery.svg);
+            margin: 0 .8rem;
+        }
+    }
+    &__deficit {
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        font-weight: 400;
+        font-family: "Roboto";
+        text-align: center;
+        margin-top: 2rem;
+    }
+    &__deficit span {
+        color: #ff6b00;
+    }
+    &__prices {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        // align-items: center;
+        margin-top: 1.8rem;
+        color: #000;
+    }
+    &__prices span {
+        font-size: 14px;
+        color: #666666;
+        line-height: 24px;
+        font-family: "Roboto";
+        font-weight: 400;
+    }
+    &__price {
+        // margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--old {
+            font-size: 34px;
+            line-height: 24px;
+            color: #0b0b0b;
+            font-weight: 300;
+            font-family: "Roboto";
+            margin-top: 1rem;
+            position: relative;
+            &::before {
+                content: '';
+                display: block; 
+                background: url(../img/form/cross.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 8rem;
+                height: 3rem;
+                position: absolute;
+                top: -.2rem;
+                left: -.2rem;
+            }
+            &::after {
+                content: '₽';
+            } 
+        }
+        &--new {
+            font-size: 34px;
+            color: #000000;
+            line-height: 24px;
+            font-family: "Roboto";
+            font-weight: 900;
+            background-color: #ffcb02;
+            width: 10.6rem;
+            height: 4rem;
+            border-radius: 4px;
+            margin: .2rem 0 1.5rem 0;
+            display: flex;
+            // text-align: center;
+            justify-content: center;
+            align-items: center;
+            &::after {
+                content: '₽';
+            }
+        }
+    }
+    &__inputs {
+        // width: 22rem;
+        // height: 6.4rem;
+        // margin;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        position: relative;
+        // outline: 2px dashed green;
+    }
+    &__name {
+        display: flex;
+        width: 22rem;
+        height: 6.4rem;
+        // margin: 0 auto;
+        border-radius: 3rem;
+        // border: none;
+        background-color: #eef2f7;
+        margin-bottom: 1rem;
+        padding-left: 5rem;
+        // outline: none;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/form/person.svg);
+            background-repeat: no-repeat;
+            width: 2rem;
+            height: 2.3rem;
+            background-size: contain;
+            top: 2rem;
+            left: 3rem;
+            // outline: 2px dashed red;
+            // z-index: 50;
+        }
+    }
+    &__name input {
+        outline: none;
+        border: none;
+        background-color: #eef2f7;
+        width: 14rem;
+    }
+    &__phone {
+        display: flex;
+        width: 22rem;
+        height: 6.4rem;
+        // margin: 0 auto;
+        border-radius: 3rem;
+        // border: none;
+        background-color: #eef2f7;
+        margin-bottom: 1rem;
+        padding-left: 5rem;
+        // outline: none;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/form/phone.svg);
+            background-repeat: no-repeat;
+            width: 2rem;
+            height: 2.3rem;
+            background-size: contain;
+            top: 9.5rem;
+            left: 3rem;
+            // outline: 2px dashed red;
+            // z-index: 50;
+        }
+    }
+    &__phone input {
+        outline: none;
+        border: none;
+        background-color: #eef2f7;
+        width: 14rem;
+    }
+    &__btn {
+        width: 22rem;
+        height: 6.4rem;
+        border-radius: 3rem;
+        background-color: #ffc002;
+        margin-bottom: 2rem;
+        // padding-left: 5rem;
+        margin-left: 1rem;
+        border: 6px solid #ffc002;
+        box-shadow: inset 0px 0px 0px 2px rgba(255,211,78,1);
+        // ffd34e
+        outline: none;
+        font-size: 28px;
+        line-height: .6;
+        color: #000000;
+        // line-height: 22px;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        transition: all .4s ease-in;
+        // padding-top: .5rem;
+        // padding-bottom: 2rem;
+        // &::after {
+        //     content: 'со скидкой';
+        //     font-size: 1.5rem;
+        //     margin-bottom: -2rem;
+        // }
+        &:hover,
+        &:focus,
+        &:active {
+            // box-shadow: inset 0px 0px 0px 2px rgba(168,202,63,1);
+            background-color: #a8ca3f;
+            border-color: #a8ca3f;
+        }
+    }
+    &__btn span {
+        line-height: 0;
+        font-size: 1.7rem;
+    }
+    &__count {
+        text-align: center;
+        font-size: 18px;
+        color: #333333;
+        line-height: 18px;
+        font-family: "Roboto";
+        font-weight: 400;
+        text-align: center;
+    }
+    &__count span {
+        color: #a8ca3f;
+    }
+    &__secure {
+        background-color: #eef2f7;
+        font-size: 14px;
+        color: #666666;
+        line-height: 17px;
+        font-family: "Roboto";
+        font-weight: 400;
+        height: 4.4rem;
+        width: 100%;
+        margin-top: .9rem;
+        border-radius: 0 0 9px 9px;
+        // border-top: none;
+        // border-left: none;
+        // overflow: hidden;
+        // z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+        &::before {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            display: inline-flex;
+            // align-items: ;
+            // justify-content: center;
+            // outline: 2px dashed red;
+            background: url(../img/form/secure.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-right: 1rem;
+        }
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__doit {
+        background: url(../img/form/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 5rem;
+        height: 23.4rem;
+        top: -36rem;
+        right: -3rem;
+        // outline: 2px dashed red;
+        z-index: 50; // your last point (arrow!)
+    }
 }
-// 2560 * 697
+
+#new-price {
+    color: #000;
+}
+
+#firstLabel {
+    display: block;
+    position: absolute;
+    background: url(../img/form/person.svg);
+    width: 2rem;
+    height: 2.3rem;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    outline: 2px dashed red;    
+}
+
+// #old-price {
+//     margin-bottom: 1rem;
+// }
+
 .desc {
     height: 94rem;
     width: 100%;
