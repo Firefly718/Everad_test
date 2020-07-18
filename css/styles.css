@@ -324,7 +324,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1350px;
   width: 96%; }
 
 .offer {
@@ -347,13 +347,13 @@ body {
   .offer__bullets {
     list-style: none;
     padding: 1rem 0;
-    margin: 0 0 2rem 10rem;
+    margin: 0 0 2rem 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -386,8 +386,8 @@ body {
         background-image: url(../img/bullets/medal.svg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 4rem;
-        height: 4rem;
+        width: 4.4rem;
+        height: 4.4rem;
         margin-right: 1rem; }
     .offer__bullet--recomend {
       margin: 0 3rem;
@@ -403,8 +403,8 @@ body {
         background-image: url(../img/bullets/recomend.svg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 4rem;
-        height: 4rem;
+        width: 3.4rem;
+        height: 5rem;
         margin-right: 1rem; }
     .offer__bullet--clients {
       margin: 0 3rem;
@@ -420,8 +420,8 @@ body {
         background-image: url(../img/bullets/clients.svg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 4rem;
-        height: 4rem;
+        width: 4.4rem;
+        height: 3.8rem;
         margin-right: 1rem; }
   .offer__logo {
     background-image: url(../img/bullets/Logo1.svg);
@@ -442,7 +442,7 @@ body {
   .offer__info {
     width: 400px;
     height: 600px;
-    margin-left: 38rem;
+    margin-left: 60rem;
     font-size: 3.8rem; }
   .offer__title {
     width: 340px;
@@ -454,7 +454,8 @@ body {
     font-family: "Roboto"; }
   .offer__title h1 {
     margin: 0 1rem;
-    font-size: 4.4rem; }
+    font-size: 4.4rem;
+    line-height: 4.4rem; }
   .offer__title span {
     font-size: 3.2rem;
     margin: 0 1rem; }
@@ -581,9 +582,10 @@ body {
     height: 15rem;
     position: absolute;
     top: 40.5rem;
-    left: 52rem; }
+    left: 123.8rem; }
 
 .desc {
   height: 94rem;
+  width: 100%;
   background-color: #fff;
   z-index: 5; }
