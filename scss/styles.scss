@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
-@import 'normalize';
+@import 'normalize',
+        'mixins',
+        'variables';
 
 * {
     box-sizing: border-box;
@@ -19,21 +21,20 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1350px;
+    max-width: 135rem;
     width: 96%;
     // outline: 2px dashed red;
 }
 
 // Start
 .offer {
-    width: 2560px;
-    height: 700px;
+    width: 256rem;
+    height: 70rem;
     background-color: #f3f9ff;
     background-image: url(../img/bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    @include bgBasic;
     z-index: 1;
-    box-shadow: inset -1300px 0px 50px 0px rgba(243,249,255,1);
+    box-shadow: inset -130rem 0 5rem 0 rgba(243,249,255,1);
     &__wrap {
         height: 100%;
         width: 100%;
@@ -44,37 +45,32 @@ body {
         list-style: none;
         padding: 1rem 0;
         margin: 0 0 2rem 0rem;
-        display: flex;
+        @include flexCenter;
         justify-content: flex-end;
-        align-items: center;
         // outline: 2px dashed red;
     }
     &__bullet {
         font-size: 1.6rem;
         line-height: 1.8rem;
         color: #666666;
-        font-weight: 400;
+        // font-weight: 400;
         font-style: italic;
-        font-family: "Roboto";
         &--name {
-            font-size: 22px;
-            line-height: 40px;
+            font-size: 2.2rem;
+            line-height: 4rem;
             color: #383334;
             font-weight: 900;
-            font-family: "Roboto";
             font-style: normal;
             margin: 0 5rem;
         }
         &--medal {
             margin: 0 3rem;
-            display: flex;
-            align-items: center;
+            @include flexCenter;
             &::before {
                 content: "";
                 display: block;
                 background-image: url(../img/bullets/medal.svg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
+                @include bgBasic;
                 width: 4.4rem;
                 height: 4.4rem;
                 margin-right: 1rem;
@@ -82,14 +78,12 @@ body {
         }
         &--recomend {
             margin: 0 3rem;
-            display: flex;
-            align-items: center;
+            @include flexCenter;
             &::before {
                 content: "";
                 display: block;
                 background-image: url(../img/bullets/recomend.svg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
+                @include bgBasic;
                 width: 3.4rem;
                 height: 5rem;
                 margin-right: 1rem;
@@ -97,14 +91,12 @@ body {
         }
         &--clients {
             margin: 0 3rem;
-            display: flex;
-            align-items: center;
+            @include flexCenter;
             &::before {
                 content: "";
                 display: block;
                 background-image: url(../img/bullets/clients.svg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
+                @include bgBasic;
                 width: 4.4rem;
                 height: 3.8rem;
                 margin-right: 1rem;
@@ -113,8 +105,7 @@ body {
     }
     &__logo {
         background-image: url(../img/bullets/Logo1.svg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        @include bgBasic;
         width: 5rem;
         height: 6rem;
         // outline: 2px dashed green;
@@ -134,20 +125,19 @@ body {
     }
     &__info {
         // outline: 2px dashed red;
-        width: 400px; //390
-        height: 600px; //530
+        width: 40rem;
+        height: 60rem;
         margin-left: 60rem;
         font-size: 3.8rem;
     }
     &__title {
         // outline: 2px solid yellow;
-        width: 340px;
-        height: 140px;
+        width: 34rem;
+        height: 14rem;
         font-size: 3.2rem;
         line-height: 5rem;
         color: #383334;
         font-weight: 900;
-        font-family: "Roboto";
     }
     &__title h1 {
         margin: 0 1rem;
@@ -159,22 +149,20 @@ body {
         font-size: 3.2rem;
         margin: 0 1rem;
         &:nth-child(odd) {
-            border-bottom: 4px solid #ff6b00;
+            border-bottom: .4rem solid $orangeBrand;
         }
         &:nth-child(even) {
-            border-bottom: 4px solid #a7c93d;;
+            border-bottom: .4rem solid $greenBrand;;
         }
         // outline: 2px solid purple;
     }
     &__list {
-        list-style: none;
-        padding: 0;
+        @include listClear;
         margin: 5rem 0 0 0;
         font-size: 2rem;
         line-height: 2.4rem;
         color: #444444;
         font-weight: 400;
-        font-family: "Roboto";
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -184,73 +172,67 @@ body {
         margin: 0 0 0 8rem;
         width: 40rem;
         &:first-child {
-            display: flex;
-            align-items: center;
+            @include flexCenter;
+            justify-content: flex-start;
             &::before {
                 // outline: 2px dashed purple;
                 content: "2в1";
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #a7c93d;
+                @include flexCenter;
+                background-color: $greenBrand;
                 width: 4rem;
                 height: 4rem;
                 border-radius: 50%;
                 margin: 0 2rem 0 1rem;
                 color: #fff;
                 font-weight: 700;
-                border: 8px solid #e8edc9;
+                border: .8rem solid #e8edc9;
                 font-size: 1.7rem;
                 line-height: 4.5rem;
             }
         }
         &:nth-child(2) {
-            display: flex;
-            align-items: center;
+            @include flexCenter;
+            justify-content: flex-start;
             &::before {
                 // outline: 2px dashed purple;
                 content: "1";
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #a7c93d;
+                @include flexCenter;
+                background-color: $greenBrand;
                 width: 4rem;
                 height: 4rem;
                 border-radius: 50%;
                 margin: 0 2rem 0 1rem;
                 color: #fff;
                 font-weight: 700;
-                border: 8px solid #e8edc9;
+                border: .8rem solid #e8edc9;
                 font-size: 1.7rem;
                 line-height: 4.5rem;
             }
         }
         &:nth-child(2) span {
-            border-bottom: 3px solid #ff6b00;
+            border-bottom: .3rem solid $orangeBrand;
         }
         &:last-child {
-            display: flex;
-            align-items: center;
+            @include flexCenter;
+            justify-content: flex-start;
             &::before {
                 // outline: 2px dashed purple;
                 content: "2";
-                display: flex;
+                @include flexCenter;
                 width: 4rem;
                 height: 4rem;
-                justify-content: center;
-                align-items: center;
-                background-color: #a7c93d;
+                background-color: $greenBrand;
                 border-radius: 50%;
                 margin: 0 2rem 0 1rem;
                 color: #fff;
                 font-weight: 700;
-                border: 8px solid #e8edc9;
+                border: .8rem solid #e8edc9;
                 font-size: 1.7rem;
                 line-height: 4.5rem;
             }
         }
         &:last-child span {
-            border-bottom: 3px solid #a7c93d;
+            border-bottom: .3rem solid $greenBrand;
         }
     }
     &__item b {
@@ -263,7 +245,7 @@ body {
         height: 15rem;
         // outline: 2px solid red;
         position: absolute;
-        top: 40.5rem;
+        top: 39rem;
         left: 123.8rem;
     }
     &__form {
@@ -275,8 +257,8 @@ body {
         height: 54rem;
         background-color: #fff;
         // outline: 2px dashed red;
-        border: 7px solid #a8ca3f;
-        border-radius: 15px;
+        border: .7rem solid #a8ca3f;
+        border-radius: 1.5rem;
         z-index: 10;
     }
     &__delivery {
@@ -284,23 +266,21 @@ body {
         height: 3.5rem;
         background: linear-gradient(to left, #f3f8fd, #f5faff);
         // outline: 2px dashed red;
-        border: 7px solid #a8ca3f;
+        border: .7rem solid #a8ca3f;
         border-top: none;
-        border-radius: 0 0 15px 15px;
+        border-radius: 0 0 1.5rem 1.5rem;
         margin: -0.7rem auto;
         display: flex;
         align-items: flex-start;
     }
     &__delivery span {
         // outline: 2px dashed green;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
         color: #444444;
         font-weight: 400;
-        font-family: "Roboto";
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        @include flexCenter;
+        justify-content: flex-start;
         padding: 0 1rem 0 0;
         &::before {
             content: '';
@@ -312,16 +292,15 @@ body {
         }
     }
     &__deficit {
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 2rem;
+        line-height: 2.2rem;
         color: #000000;
         font-weight: 400;
-        font-family: "Roboto";
         text-align: center;
         margin-top: 2rem;
     }
     &__deficit span {
-        color: #ff6b00;
+        color: $orangeBrand;
     }
     &__prices {
         display: flex;
@@ -331,31 +310,26 @@ body {
         color: #000;
     }
     &__prices span {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #666666;
-        line-height: 24px;
-        font-family: "Roboto";
+        line-height: 2.4rem;
         font-weight: 400;
     }
     &__price {
-        display: flex;
+        @include flexCenter;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         &--old {
-            font-size: 34px;
-            line-height: 24px;
+            font-size: 3.4rem;
+            line-height: 2.4rem;
             color: #0b0b0b;
             font-weight: 300;
-            font-family: "Roboto";
             margin-top: 1rem;
             position: relative;
             &::before {
                 content: '';
                 display: block; 
                 background: url(../img/form/cross.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
+                @include bgBasic;
                 width: 8rem;
                 height: 3rem;
                 position: absolute;
@@ -367,28 +341,24 @@ body {
             } 
         }
         &--new {
-            font-size: 34px;
+            font-size: 3.4rem;
             color: #000000;
-            line-height: 24px;
-            font-family: "Roboto";
+            line-height: 2.4rem;
             font-weight: 900;
             background-color: #ffcb02;
             width: 10.6rem;
             height: 4rem;
-            border-radius: 4px;
+            border-radius: .4rem;
             margin: .2rem 0 1.5rem 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenter;
             &::after {
                 content: '₽';
             }
         }
     }
     &__inputs {
-        display: flex;
+        @include flexCenter;
         flex-direction: column;
-        align-items: center;
         position: relative;
         // outline: 2px dashed green;
     }
@@ -405,10 +375,9 @@ body {
             display: block;
             position: absolute;
             background: url(../img/form/person.svg);
-            background-repeat: no-repeat;
+            @include bgBasic;
             width: 2rem;
             height: 2.3rem;
-            background-size: contain;
             top: 2rem;
             left: 3rem;
             // outline: 2px dashed red;
@@ -433,10 +402,9 @@ body {
             display: block;
             position: absolute;
             background: url(../img/form/phone.svg);
-            background-repeat: no-repeat;
+            @include bgBasic;
             width: 2rem;
             height: 2.3rem;
-            background-size: contain;
             top: 9.5rem;
             left: 3rem;
             // outline: 2px dashed red;
@@ -455,13 +423,12 @@ body {
         background-color: #ffc002;
         margin-bottom: 2rem;
         margin-left: 1rem;
-        border: 6px solid #ffc002;
-        box-shadow: inset 0px 0px 0px 2px rgba(255,211,78,1);
+        border: .6rem solid #ffc002;
+        box-shadow: inset 0 0 0 .2rem rgba(255,211,78,1);
         outline: none;
-        font-size: 28px;
+        font-size: 2.8rem;
         line-height: .6;
-        color: #000000;
-        font-family: "Roboto";
+        color: #000;
         font-weight: 700;
         text-align: center;
         transition: all .4s ease-in;
@@ -478,10 +445,9 @@ body {
     }
     &__count {
         text-align: center;
-        font-size: 18px;
-        color: #333333;
-        line-height: 18px;
-        font-family: "Roboto";
+        font-size: 1.8rem;
+        color: #333;
+        line-height: 1.8rem;
         font-weight: 400;
         text-align: center;
     }
@@ -490,18 +456,15 @@ body {
     }
     &__secure {
         background-color: #eef2f7;
-        font-size: 14px;
-        color: #666666;
-        line-height: 17px;
-        font-family: "Roboto";
+        font-size: 1.4rem;
+        color: #666;
+        line-height: 1.7rem;
         font-weight: 400;
         height: 4.4rem;
         width: 100%;
         margin-top: .9rem;
-        border-radius: 0 0 9px 9px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border-radius: 0 0 .9rem .9rem;
+        @include flexCenter;
         &::before {
             content: '';
             width: 2rem;
@@ -509,8 +472,7 @@ body {
             display: inline-flex;
             // outline: 2px dashed red;
             background: url(../img/form/secure.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
+            @include bgBasic;
             margin-right: 1rem;
         }
     }
@@ -519,8 +481,7 @@ body {
     }
     &__doit {
         background: url(../img/form/arrow-down.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
+        @include bgBasic;
         position: absolute;
         width: 5rem;
         height: 22rem;
@@ -542,7 +503,7 @@ body {
     }
     &__waves {
         height: 10rem;
-        width: 2560px;
+        width: 256rem;
         position: absolute;
         background-image: url(../img/waves.png);
         background-repeat: no-repeat;
@@ -554,8 +515,7 @@ body {
     }
     &__medicine {
         background-image: url(../img/medicine.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+        @include bgBasic;
         width: 78rem;
         height: 50rem;
         position: absolute;
@@ -565,8 +525,7 @@ body {
     }
     &__feets {
         background-image: url(../img/feets.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+        @include bgBasic;
         width: 88rem;
         height: 88rem;
         z-index: 7;
@@ -581,17 +540,14 @@ body {
         // outline: 4px dashed red;
         width: 10rem;
         height: 4rem;
-        background-color: #ff6b00;
+        background-color: $orangeBrand;
         z-index: 8;
-        border-radius: 5px;
-        font-size: 34px;
-        color: #ffffff;
-        line-height: 24px;
-        font-family: "Roboto";
+        border-radius: .5rem;
+        font-size: 3.4rem;
+        color: #fff;
+        line-height: 2.4rem;
         font-weight: 900;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         &::after {
             content: '₽';
         }
@@ -603,16 +559,13 @@ body {
             // outline: 4px dashed red;
             background-color: #a8ca3f;
             height: 4rem;
-            border-radius: 5px;
+            border-radius: .5rem;
             z-index: 8;
-            color: #ffffff;
-            font-size: 34px;
-            font-family: "Roboto";
-            line-height: 24px;
-            display: flex;
+            color: #fff;
+            font-size: 3.4rem;
+            line-height: 2.4rem;
             font-weight: 900;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter;
             &::after {
                 content: '₽';
             }
@@ -633,12 +586,12 @@ body {
     background-size: contain;
     top: 0;
     left: 0;
-    outline: 2px dashed red;    
+    // outline: 2px dashed red;    
 }
 
 .desc {
     height: 100rem;
-    width: 2560px;
+    width: 256rem;
     background-color: #fff;
     z-index: 5;
     padding-top: 20rem;
@@ -647,9 +600,9 @@ body {
         height: 78rem;
         // outline: 2px dashed red;
         z-index: 6;
-        display: flex;
+        @include flexCenter;
+        justify-content: flex-start;
         flex-direction: column;
-        align-items: center;
     }
     &__logo {
         background-image: url(../img/bullets/Logo1.svg);
@@ -674,18 +627,16 @@ body {
     }
     &__text {
         margin-top: 2rem;
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
         color: #383334;
         font-weight: 900;
-        font-family: "Roboto";
         text-align: center;
         margin-bottom: 3rem;
         &--second {
-            font-size: 24px;
+            font-size: 2.4rem;
             color: #2b2828;
-            line-height: 28px;
-            font-family: "Roboto";
+            line-height: 2.8rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 5rem;
@@ -693,16 +644,15 @@ body {
     }
     &__list {
         width: 100%;
-        display: flex;
-        justify-content: center;
+        @include flexCenter;
         margin-bottom: 7rem;
     }
     &__item:nth-child(2) {
         margin: 0 3rem;
     }
     &__wrap {
-        display: flex;
-        align-items: center;
+        @include flexCenter;
+        justify-content: flex-start;
     }
     &__pic {
         width: 16.8rem;
@@ -742,32 +692,30 @@ body {
         }
     }
     &__about {
-        font-size: 22px;
-        line-height: 26px;
-        color: #000000;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: #000;
         font-weight: 500;
-        font-family: "Roboto";
         margin-left: 2rem;
     }
     &__note {
-        width: 371px;
-        font-size: 18px;
-        line-height: 28px;
-        color: #444444;
+        width: 37.1rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #444;
         font-weight: 400;
-        font-family: "Roboto";
         &::before {
             content: '';
             width: 5rem;
-            height: 3px;
+            height: .3rem;
             background-color: #becbd8;
             display: block;
             margin-bottom: 2rem;
         }
     }
     &__circle--first {
-        width: 188px;
-        height: 117px;
+        width: 18.8rem;
+        height: 11.7rem;
         // outline: 2px dashed red;
         background: url(../img/description/circle-first.svg);
         position: absolute;
@@ -775,8 +723,8 @@ body {
         left: 66.6rem;
     }
     &__circle--second {
-        width: 188px;
-        height: 117px;
+        width: 18.8rem;
+        height: 11.7rem;
         // outline: 2px dashed red;
         background: url(../img/description/circle-second.svg);
         position: absolute;
@@ -784,8 +732,8 @@ body {
         left: 106.8rem;
     }
     &__circle--third {
-        width: 188px;
-        height: 117px;
+        width: 18.8rem;
+        height: 11.7rem;
         // outline: 2px dashed red;
         background: url(../img/description/circle-third.svg);
         position: absolute;
@@ -796,10 +744,8 @@ body {
         width: 116rem;
         height: 13rem;
         border: 3px solid #f3d3bb;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border-radius: .8rem;
+        @include flexCenter;
         flex-direction: column;
         position: relative;
         &::before {
@@ -812,19 +758,18 @@ body {
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%, -20px);
+            transform: translate(-50%, -2rem);
             // outline: 2px dashed red;
         }
         &--text {
-            font-size: 22px;
-            color: #000000;
-            line-height: 28px;
-            font-family: "Roboto";
+            font-size: 2.2rem;
+            color: #000;
+            line-height: 2.8rem;
             font-weight: 500;
             text-align: center;
         }
         &--text span {
-            color: #444444;
+            color: #444;
         }
     }
 }
