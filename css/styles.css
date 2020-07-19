@@ -466,7 +466,7 @@ body {
   .offer__list {
     list-style: none;
     padding: 0;
-    margin: 7rem 0 0 0;
+    margin: 5rem 0 0 0;
     font-size: 2rem;
     line-height: 2.4rem;
     color: #444444;
@@ -862,10 +862,103 @@ body {
     background-size: contain;
     position: absolute;
     width: 5rem;
-    height: 23.4rem;
+    height: 22rem;
     top: -36rem;
-    right: -3rem;
-    z-index: 50; }
+    right: -4rem;
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
+  .offer__circle {
+    background-image: url(../img/circle-border.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67rem;
+    height: 67rem;
+    z-index: 6;
+    position: absolute;
+    top: 10rem;
+    left: 51rem; }
+  .offer__waves {
+    height: 12rem;
+    width: 2560px;
+    position: absolute;
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 7;
+    top: 64rem;
+    left: 0; }
+  .offer__medicine {
+    background-image: url(../img/medicine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 78rem;
+    height: 78rem;
+    position: absolute;
+    top: 48rem;
+    left: 54rem;
+    z-index: 8; }
+  .offer__feets {
+    background-image: url(../img/feets.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 88rem;
+    height: 88rem;
+    z-index: 7;
+    position: absolute;
+    top: -28rem;
+    left: 40rem; }
+  .offer__cost {
+    position: absolute;
+    top: 46.5rem;
+    left: 93rem;
+    width: 10rem;
+    height: 4rem;
+    background-color: #ff6b00;
+    z-index: 8;
+    border-radius: 5px;
+    font-size: 34px;
+    color: #ffffff;
+    line-height: 24px;
+    font-family: "Roboto";
+    font-weight: 900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .offer__cost::after {
+      content: '₽'; }
+    .offer__cost--second {
+      position: absolute;
+      top: 61.5rem;
+      left: 104.5rem;
+      width: 10rem;
+      background-color: #a8ca3f;
+      height: 4rem;
+      border-radius: 5px;
+      z-index: 8;
+      color: #ffffff;
+      font-size: 34px;
+      font-family: "Roboto";
+      line-height: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-weight: 900;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .offer__cost--second::after {
+        content: '₽'; }
 
 #new-price {
   color: #000; }
@@ -883,6 +976,6 @@ body {
 
 .desc {
   height: 94rem;
-  width: 100%;
+  width: 2560px;
   background-color: #fff;
   z-index: 5; }

@@ -180,7 +180,7 @@ body {
     &__list {
         list-style: none;
         padding: 0;
-        margin: 7rem 0 0 0;
+        margin: 5rem 0 0 0;
         font-size: 2rem;
         line-height: 2.4rem;
         color: #444444;
@@ -583,11 +583,116 @@ body {
         background-size: contain;
         position: absolute;
         width: 5rem;
-        height: 23.4rem;
+        height: 22rem;
         top: -36rem;
-        right: -3rem;
+        right: -4rem;
         // outline: 2px dashed red;
-        z-index: 50; // your last point (arrow!)
+        transform: rotate(-2deg);
+    }
+    &__circle {
+        background-image: url(../img/circle-border.png);
+        // background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 67rem; //56
+        height: 67rem;
+        z-index: 6;
+        position: absolute;
+        top: 10rem;
+        left: 51rem;
+    }
+    &__waves {
+        height: 12rem;
+        width: 2560px;
+        position: absolute;
+        background-image: url(../img/waves.png);
+        // background-repeat: repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-size: 80% 100%;
+        z-index: 7;
+        top: 64rem;
+        // right: 5rem;
+        left: 0;
+        // outline: 2px dashed red;
+        // &::after {
+        //     display: block;
+        //     // outline: 2px dashed red;
+        //     content: '';
+        //     position: absolute;
+        //     z-index: 7;
+        //     top: 0rem;
+        //     right: -50rem;
+        //     background-image: url(../img/waves.png);
+        //     height: 12rem;
+        //     width: 2560px;
+        // }
+    }
+    &__medicine {
+        background-image: url(../img/medicine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 78rem;
+        height: 78rem;
+        position: absolute;
+        top: 48rem;
+        left: 54rem;
+        z-index: 8;
+    }
+    &__feets {
+        background-image: url(../img/feets.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 88rem;
+        height: 88rem;
+        z-index: 7;
+        position: absolute;
+        top: -28rem;
+        left: 40rem;
+    }
+    &__cost {
+        position: absolute;
+        top: 46.5rem;
+        left: 93rem;
+        // outline: 4px dashed red;
+        width: 10rem;
+        height: 4rem;
+        background-color: #ff6b00;
+        z-index: 8;
+        border-radius: 5px;
+        font-size: 34px;
+        color: #ffffff;
+        line-height: 24px;
+        font-family: "Roboto";
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+            content: '₽';
+        }
+        &--second {
+            position: absolute;
+            top: 61.5rem;
+            left: 104.5rem;
+            width: 10rem;
+            // outline: 4px dashed red;
+            background-color: #a8ca3f;
+            height: 4rem;
+            border-radius: 5px;
+            z-index: 8;
+            color: #ffffff;
+            font-size: 34px;
+            font-family: "Roboto";
+            line-height: 24px;
+            display: flex;
+            font-weight: 900;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                content: '₽';
+            }
+        }
     }
 }
 
@@ -613,7 +718,7 @@ body {
 
 .desc {
     height: 94rem;
-    width: 100%;
+    width: 2560px;
     background-color: #fff;
     z-index: 5;
 }
