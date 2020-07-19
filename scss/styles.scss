@@ -24,6 +24,9 @@ body {
     max-width: 135rem;
     width: 96%;
     // outline: 2px dashed red;
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
 }
 
 // Start
@@ -35,11 +38,21 @@ body {
     @include bgBasic;
     z-index: 1;
     box-shadow: inset -130rem 0 5rem 0 rgba(243,249,255,1);
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        height: 60rem; //46
+        box-shadow: inset -50rem 0 5rem 0 rgba(243,249,255,1);
+        background-size: 100% 100%;
+        
+    }
     &__wrap {
         height: 100%;
         width: 100%;
         background: linear-gradient(to left, #f3f9ff, #f3f9ff85);
         z-index: 3;
+        // @media screen and (max-width: 1024px) {
+        //     background-color: #fff;
+        // }
     }
     &__bullets {
         list-style: none;
@@ -48,6 +61,9 @@ body {
         @include flexCenter;
         justify-content: flex-end;
         // outline: 2px dashed red;
+        position: relative;
+        z-index: 9;
+        // @media screen and (max-width: 1024px) {}
     }
     &__bullet {
         font-size: 1.6rem;
@@ -62,6 +78,9 @@ body {
             font-weight: 900;
             font-style: normal;
             margin: 0 5rem;
+            @media screen and (max-width: 1024px) {
+                margin: 0 4rem 0 4rem;
+            }
         }
         &--medal {
             margin: 0 3rem;
@@ -121,6 +140,9 @@ body {
             // outline: 2px dashed red;
             margin-left: 5rem;
             padding-top: 4rem;
+            // @media screen and (max-width: 1024px) {
+            //     margin-left: 6rem;
+            // }
         }
     }
     &__info {
@@ -129,6 +151,9 @@ body {
         height: 60rem;
         margin-left: 60rem;
         font-size: 3.8rem;
+        @media screen and (max-width: 1024px) {
+            margin-left: 50rem;
+        }
     }
     &__title {
         // outline: 2px solid yellow;
@@ -171,6 +196,8 @@ body {
     &__item {
         margin: 0 0 0 8rem;
         width: 40rem;
+        position: relative;
+        z-index: 10; //this point!
         &:first-child {
             @include flexCenter;
             justify-content: flex-start;
@@ -207,6 +234,9 @@ body {
                 border: .8rem solid #e8edc9;
                 font-size: 1.7rem;
                 line-height: 4.5rem;
+                @media screen and (max-width: 1024px) {
+                    margin-left: 5rem;
+                }
             }
         }
         &:nth-child(2) span {
@@ -494,12 +524,17 @@ body {
         background-image: url(../img/circle-border.png);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 67rem; //56
+        width: 67rem;
         height: 67rem;
         z-index: 6;
         position: absolute;
         top: 10rem;
         left: 51rem;
+        @media screen and (max-width: 1024px) {
+            width: 47rem;
+            height: 47rem;
+            left: 6rem;
+        }
     }
     &__waves {
         height: 10rem;
@@ -512,6 +547,9 @@ body {
         top: 68rem;
         left: 0;
         // outline: 2px dashed red;
+        @media screen and (max-width: 1024px) {
+            top: 52rem;
+        }
     }
     &__medicine {
         background-image: url(../img/medicine.png);
@@ -522,6 +560,12 @@ body {
         top: 48rem;
         left: 54rem;
         z-index: 8;
+        @media screen and (max-width: 1024px) {
+            width: 60rem;
+            height: 50rem;
+            left: 10rem;
+            top: 42rem;
+        }
     }
     &__feets {
         background-image: url(../img/feets.png);
@@ -532,6 +576,13 @@ body {
         position: absolute;
         top: -28rem;
         left: 40rem;
+        @media screen and (max-width: 1024px) {
+            width: 60rem;
+            height: 60rem;
+            left: 0;
+            top: -10rem;
+            overflow: hidden;
+        }
     }
     &__cost {
         position: absolute;
@@ -548,6 +599,10 @@ body {
         line-height: 2.4rem;
         font-weight: 900;
         @include flexCenter;
+        @media screen and (max-width: 1024px) {
+            left: 38rem;
+            top: 41rem;
+        }
         &::after {
             content: '₽';
         }
@@ -566,6 +621,10 @@ body {
             line-height: 2.4rem;
             font-weight: 900;
             @include flexCenter;
+            @media screen and (max-width: 1024px) {
+                left: 47rem;
+                top: 52rem;
+            }
             &::after {
                 content: '₽';
             }
@@ -611,7 +670,10 @@ body {
         width: 5rem;
         height: 6rem;
         // outline: 2px dashed green;
-        z-index: 10;
+        z-index: 8;
+        // @media screen and (max-width: 1024px) {
+        //         margin-left: 6rem;
+        // }
         &::after {
             content: "";
             display: block;

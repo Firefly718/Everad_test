@@ -326,6 +326,9 @@ body {
   margin: 0 auto;
   max-width: 135rem;
   width: 96%; }
+  @media screen and (max-width: 1024px) {
+    .container {
+      width: 90%; } }
 
 .offer {
   width: 256rem;
@@ -337,6 +340,13 @@ body {
   z-index: 1;
   -webkit-box-shadow: inset -130rem 0 5rem 0 #f3f9ff;
   box-shadow: inset -130rem 0 5rem 0 #f3f9ff; }
+  @media screen and (max-width: 1024px) {
+    .offer {
+      width: 100%;
+      height: 60rem;
+      -webkit-box-shadow: inset -50rem 0 5rem 0 #f3f9ff;
+      box-shadow: inset -50rem 0 5rem 0 #f3f9ff;
+      background-size: 100% 100%; } }
   .offer__wrap {
     height: 100%;
     width: 100%;
@@ -359,7 +369,9 @@ body {
     align-items: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    position: relative;
+    z-index: 9; }
   .offer__bullet {
     font-size: 1.6rem;
     line-height: 1.8rem;
@@ -372,6 +384,9 @@ body {
       font-weight: 900;
       font-style: normal;
       margin: 0 5rem; }
+      @media screen and (max-width: 1024px) {
+        .offer__bullet--name {
+          margin: 0 4rem 0 4rem; } }
     .offer__bullet--medal {
       margin: 0 3rem;
       display: -webkit-box;
@@ -454,6 +469,9 @@ body {
     height: 60rem;
     margin-left: 60rem;
     font-size: 3.8rem; }
+    @media screen and (max-width: 1024px) {
+      .offer__info {
+        margin-left: 50rem; } }
   .offer__title {
     width: 34rem;
     height: 14rem;
@@ -493,7 +511,9 @@ body {
     align-items: flex-end; }
   .offer__item {
     margin: 0 0 0 8rem;
-    width: 40rem; }
+    width: 40rem;
+    position: relative;
+    z-index: 10; }
     .offer__item:first-child {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -562,6 +582,9 @@ body {
         border: .8rem solid #e8edc9;
         font-size: 1.7rem;
         line-height: 4.5rem; }
+        @media screen and (max-width: 1024px) {
+          .offer__item:nth-child(2)::before {
+            margin-left: 5rem; } }
     .offer__item:nth-child(2) span {
       border-bottom: 0.3rem solid #ff6b00; }
     .offer__item:last-child {
@@ -901,6 +924,11 @@ body {
     position: absolute;
     top: 10rem;
     left: 51rem; }
+    @media screen and (max-width: 1024px) {
+      .offer__circle {
+        width: 47rem;
+        height: 47rem;
+        left: 6rem; } }
   .offer__waves {
     height: 10rem;
     width: 256rem;
@@ -911,6 +939,9 @@ body {
     z-index: 7;
     top: 68rem;
     left: 0; }
+    @media screen and (max-width: 1024px) {
+      .offer__waves {
+        top: 52rem; } }
   .offer__medicine {
     background-image: url(../img/medicine.png);
     background-repeat: no-repeat;
@@ -921,6 +952,12 @@ body {
     top: 48rem;
     left: 54rem;
     z-index: 8; }
+    @media screen and (max-width: 1024px) {
+      .offer__medicine {
+        width: 60rem;
+        height: 50rem;
+        left: 10rem;
+        top: 42rem; } }
   .offer__feets {
     background-image: url(../img/feets.png);
     background-repeat: no-repeat;
@@ -931,6 +968,13 @@ body {
     position: absolute;
     top: -28rem;
     left: 40rem; }
+    @media screen and (max-width: 1024px) {
+      .offer__feets {
+        width: 60rem;
+        height: 60rem;
+        left: 0;
+        top: -10rem;
+        overflow: hidden; } }
   .offer__cost {
     position: absolute;
     top: 46.5rem;
@@ -953,6 +997,10 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 1024px) {
+      .offer__cost {
+        left: 38rem;
+        top: 41rem; } }
     .offer__cost::after {
       content: '₽'; }
     .offer__cost--second {
@@ -977,6 +1025,10 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      @media screen and (max-width: 1024px) {
+        .offer__cost--second {
+          left: 47rem;
+          top: 52rem; } }
       .offer__cost--second::after {
         content: '₽'; }
 
@@ -1025,7 +1077,7 @@ body {
     background-repeat: no-repeat;
     width: 5rem;
     height: 6rem;
-    z-index: 10; }
+    z-index: 8; }
     .desc__logo::after {
       content: "";
       display: block;
