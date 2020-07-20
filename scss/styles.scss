@@ -12,6 +12,9 @@ html {
     height: 100%;
     font-size: 10px;
     // overflow-x: hidden;
+    // @media screen and (max-width: 768px) {
+    //     width: 100%;
+    // }
 }
 
 body {
@@ -19,6 +22,9 @@ body {
     font: 1.5rem/1.6 'Roboto', sans-serif;
     background-color: rgb(204, 204, 204);
     // overflow-x: hidden;
+    // @media screen and (max-width: 768px) {
+    //     width: 100%;
+    // }
 }
 
 .container {
@@ -354,6 +360,9 @@ body {
         @media screen and (max-width: 768px) {
             margin-top: 22rem;
         }
+        @media screen and (max-width: 375px) {
+            margin-top: 7rem;
+        }
     }
     &__item {
         margin: 0 0 0 8rem;
@@ -363,9 +372,15 @@ body {
         @media screen and (max-width: 1024px) {
             margin-left: 0rem;
         }
+        @media screen and (max-width: 768px) {
+            width: 35rem;
+        }
         &:first-child {
             @include flexCenter;
             justify-content: flex-start;
+            // @media screen and (max-width: 768px) {
+            //     width: 35rem;
+            // }
             &::before {
                 // outline: 2px dashed purple;
                 content: "2в1";
@@ -382,6 +397,7 @@ body {
                 line-height: 4.5rem;
                 @media screen and (max-width: 768px) {
                     margin-left: -5rem;
+                    // width: 50%;
                 }
                 @media screen and (max-width: 375px) {
                     // margin: 0 2rem 0;
@@ -476,7 +492,7 @@ body {
         top: 39rem;
         left: 123.8rem;
         @media screen and (max-width: 1024px) {
-            left: 66rem;
+            left: 61rem;
             top: 39rem;
             z-index: 10;
             transform: rotate(-14deg);
@@ -1040,12 +1056,12 @@ body {
     }
     @media screen and (max-width: 768px) {
         padding-top: 100rem;
-        height: 240rem;
+        height: 245rem;
     }
     @media screen and (max-width: 375px) {
         padding-top: 135rem;
         // width: 100%;
-        height: 320rem;
+        height: 345rem;
     }
     &__title {
         width: 99%;
@@ -1250,6 +1266,9 @@ body {
     // }
     &__item:nth-child(3) {
         margin-left: 1rem;
+        @media screen and (max-width: 375px) {
+            margin-top: 5rem;
+        }
     }
     &__about {
         font-size: 2.2rem;
@@ -1314,7 +1333,7 @@ body {
         left: 66.2rem;
         @media screen and (max-width: 1024px) {
             top: 160rem;
-            left: 8rem;
+            left: 7.5rem;
             background-size: contain;
             width: 14rem;
             height: 10rem;
@@ -1325,8 +1344,8 @@ body {
             width: 10rem;
         }
         @media screen and (max-width: 375px) {
-            top: 209.5rem;
-            left: 1.7rem;
+            top: 209.7rem;
+            left: 3rem;
         }
     }
     &__circle--second {
@@ -1340,7 +1359,7 @@ body {
         background-repeat: no-repeat;
         @media screen and (max-width: 1024px) {
             top: 160rem;
-            left: 35.7rem;
+            left: 35.2rem;
             background-size: contain;
             width: 14rem;
             height: 10rem;
@@ -1351,8 +1370,8 @@ body {
             width: 10rem;
         }
         @media screen and (max-width: 375px) {
-            top: 242.5rem;
-            left: 1.7rem;
+            top: 241.5rem;
+            left: 3.1rem;
         }
     }
     &__circle--third {
@@ -1366,7 +1385,7 @@ body {
         background-repeat: no-repeat;
         @media screen and (max-width: 1024px) {
             top: 160rem;
-            left: 65rem;
+            left: 65.5rem;
             background-size: contain;
             width: 14rem;
             height: 10rem;
@@ -1377,8 +1396,8 @@ body {
             width: 10rem;
         }
         @media screen and (max-width: 375px) {
-            top: 270.5rem;
-            left: 1.7rem;
+            top: 276rem;
+            left: 3.3rem;
         }
     }
     &__stat {
