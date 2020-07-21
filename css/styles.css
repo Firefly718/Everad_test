@@ -725,7 +725,7 @@ body {
         margin-top: 6rem; } }
     @media screen and (max-width: 375px) {
       .offer__list {
-        margin-top: 7rem; } }
+        margin-top: 12rem; } }
   .offer__item {
     margin: 0 0 0 8rem;
     width: 40rem;
@@ -926,7 +926,7 @@ body {
     @media screen and (max-width: 414px) {
       .offer__arrow {
         left: 4.5rem;
-        top: 89rem;
+        top: 84rem;
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -934,7 +934,7 @@ body {
     @media screen and (max-width: 375px) {
       .offer__arrow {
         left: 4.2rem;
-        top: 85rem;
+        top: 88rem;
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -975,7 +975,7 @@ body {
     @media screen and (max-width: 375px) {
       .offer__order {
         width: 100%;
-        margin: 0;
+        margin: 5rem 0;
         height: 55.5rem; } }
   .offer__delivery {
     width: 15rem;
@@ -1870,8 +1870,8 @@ body {
         left: 2.2rem; } }
     @media screen and (max-width: 375px) {
       .desc__circle--second {
-        top: 241.5rem;
-        left: 3.1rem; } }
+        top: 241.7rem;
+        left: 2rem; } }
   .desc__circle--third {
     width: 18.8rem;
     height: 11.7rem;
@@ -1902,8 +1902,8 @@ body {
         left: 2.7rem; } }
     @media screen and (max-width: 375px) {
       .desc__circle--third {
-        top: 276rem;
-        left: 3.3rem; } }
+        top: 276.3rem;
+        left: 2.5rem; } }
   .desc__stat {
     width: 116rem;
     height: 13rem;
