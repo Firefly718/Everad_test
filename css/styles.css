@@ -430,6 +430,9 @@ body {
     @media screen and (max-width: 1366px) {
       .offer__bullet:first-child {
         width: 5rem; } }
+    @media screen and (max-width: 375px) {
+      .offer__bullet:first-child {
+        margin: 0 auto; } }
   @media screen and (max-width: 1366px) {
     .offer__bullet:last-child {
       margin-right: 5rem; } }
