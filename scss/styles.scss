@@ -1474,14 +1474,15 @@ body {
         left: 147.5rem;
         background-repeat: no-repeat;
         @media screen and (max-width: 1366px) {
+            width: 14rem;
+            height: 10rem;
             left: 91.5rem;
+            top: 100rem;
+            background-size: contain;
         }
         @media screen and (max-width: 1024px) {
             top: 160rem;
             left: 65.5rem;
-            background-size: contain;
-            width: 14rem;
-            height: 10rem;
         }
         @media screen and (max-width: 768px) {
             top: 175rem;
