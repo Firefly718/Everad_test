@@ -40,6 +40,12 @@ body {
     @include bgBasic;
     z-index: 1;
     box-shadow: inset -130rem 0 5rem 0 rgba(243,249,255,1);
+    @media screen and (max-width: 1366px) {
+        width: 100%;
+        box-shadow: inset -70rem 0 5rem 0 rgba(243,249,255,1);
+        height: 70rem;
+        background-size: cover;
+    }
     @media screen and (max-width: 1024px) {
         width: 100%;
         height: 60rem;
@@ -73,14 +79,19 @@ body {
         // outline: 2px dashed red;
         position: relative;
         z-index: 9;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1366px) {
             width: 100%;
+            // margin-right: 5rem;
+            // justify-content: space-around;
         }
+        // @media screen and (max-width: 1024px) {
+        //     width: 100%;
+        // }
         @media screen and (max-width: 768px) {
             justify-content: space-between;
         }
         @media screen and (max-width: 667px) {
-            width: 100%;
+            // width: 100%;
             flex-flow: row wrap;
             justify-content: space-evenly;
             margin: 0;
@@ -96,12 +107,23 @@ body {
     }
     &__bullet:first-child {
         width: 100%;
+        @media screen and (max-width: 1366px) {
+            width: 5rem;
+        }
+    }
+    &__bullet:last-child {
+        @media screen and (max-width: 1366px) {
+            margin-right: 5rem;
+        }
     }
     &__bullet {
         font-size: 1.6rem;
         line-height: 1.8rem;
         color: #666666;
         font-style: italic;
+        @media screen and (max-width: 1366px) {
+            font-size: 1.4rem;
+        }
         @media screen and (max-width: 768px) {
             width: 60%;
         }
@@ -123,6 +145,9 @@ body {
             font-weight: 900;
             font-style: normal;
             margin: 0 5rem;
+            @media screen and (max-width: 1366px) {
+                margin: 0 7rem 0 5rem;
+            }
             @media screen and (max-width: 1024px) {
                 margin: 0 4rem 0 10rem;
             }
@@ -247,6 +272,9 @@ body {
         // outline: 2px dashed green;
         z-index: 10;
         margin-left: 90%;
+        @media screen and (max-width: 1366px) {
+            margin: 0;
+        }
         @media screen and (max-width: 768px) {
             margin: 0 1rem;
         }
@@ -290,9 +318,14 @@ body {
         height: 60rem;
         margin-left: 60rem;
         font-size: 3.8rem;
+        @media screen and (max-width: 1366px) {
+            margin-left: 57rem;
+            // width: 35rem;
+        }
         @media screen and (max-width: 1024px) {
             margin-left: 50rem;
-            width: 45rem;
+            // width: 45rem;
+            // height: 50rem;
         }
         @media screen and (max-width: 768px) {
             margin-left: 37rem;
@@ -330,6 +363,10 @@ body {
         margin: 0 1rem;
         font-size: 4.4rem;
         line-height: 4.4rem;
+        @media screen and (max-width: 1366px) {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
         @media screen and (max-width: 667px) {
             font-size: 2.5rem;
             width: 50%;
@@ -502,6 +539,10 @@ body {
         font-weight: 500;
     }
     &__item p {
+        @media screen and (max-width: 1366px) {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
         @media screen and (max-width: 1024px) {
             margin: 0;
         }
@@ -517,6 +558,10 @@ body {
         position: absolute;
         top: 39rem;
         left: 123.8rem;
+        @media screen and (max-width: 1366px) {
+            left: 63rem;
+            top: 36.5rem;
+        }
         @media screen and (max-width: 1024px) {
             left: 61rem;
             top: 39rem;
@@ -900,6 +945,11 @@ body {
         position: absolute;
         top: 10rem;
         left: 51rem;
+        @media screen and (max-width: 1366px) {
+            width: 47rem;
+            height: 47rem;
+            left: 6rem;
+        }
         @media screen and (max-width: 1024px) {
             width: 47rem;
             height: 47rem;
@@ -928,6 +978,9 @@ body {
         top: 68rem;
         left: 0;
         // outline: 2px dashed red;
+        @media screen and (max-width: 1366px) {
+            top: 65rem;
+        }
         @media screen and (max-width: 1024px) {
             top: 52rem;
             width: 100%;
@@ -948,6 +1001,12 @@ body {
         top: 48rem;
         left: 54rem;
         z-index: 8;
+        @media screen and (max-width: 1366px) {
+            width: 65rem;
+            height: 35rem;
+            left: 10rem;
+            top: 44rem;
+        }
         @media screen and (max-width: 1024px) {
             width: 60rem;
             height: 50rem;
@@ -979,11 +1038,17 @@ body {
         position: absolute;
         top: -28rem;
         left: 40rem;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1366px) {
             width: 60rem;
             height: 60rem;
             left: 0;
             top: -10rem;
+        }
+        @media screen and (max-width: 1024px) {
+            // width: 60rem;
+            // height: 60rem;
+            // left: 0;
+            // top: -10rem;
             overflow: hidden;
         }
         @media screen and (max-width: 768px) {
@@ -1006,10 +1071,14 @@ body {
         line-height: 2.4rem;
         font-weight: 900;
         @include flexCenter;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1366px) {
             left: 38rem;
-            top: 41rem;
+            top: 43rem;
         }
+        // @media screen and (max-width: 1024px) {
+        //     left: 38rem;
+        //     top: 41rem;
+        // }
         @media screen and (max-width: 768px) {
             left: 24rem;
             top: 24rem;
@@ -1040,10 +1109,14 @@ body {
             line-height: 2.4rem;
             font-weight: 900;
             @include flexCenter;
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1366px) {
                 left: 47rem;
-                top: 52rem;
+                top: 55rem;
             }
+            // @media screen and (max-width: 1024px) {
+            //     left: 47rem;
+            //     top: 52rem;
+            // }
             @media screen and (max-width: 768px) {
                 left: 31rem;
                 top: 31rem;
@@ -1085,10 +1158,15 @@ body {
     background-color: #fff;
     z-index: 5;
     padding-top: 20rem;
+    @media screen and (max-width: 1366px) {
+        width: 100%;
+        padding-top: 8rem;
+        height: 90rem;
+    }
     @media screen and (max-width: 1024px) {
         padding-top: 75rem;
         height: 250rem;
-        width: 100%;
+        // width: 100%;
     }
     @media screen and (max-width: 768px) {
         padding-top: 100rem;
@@ -1143,6 +1221,9 @@ body {
         font-weight: 900;
         text-align: center;
         margin-bottom: 3rem;
+        @media screen and (max-width: 1366px) {
+            font-size: 3.7rem;
+        }
         @media screen and (max-width: 375px) {
             font-size: 4rem;
         }
@@ -1153,6 +1234,9 @@ body {
             font-weight: 700;
             text-align: center;
             margin-bottom: 5rem;
+            @media screen and (max-width: 1366px) {
+                font-size: 2rem;
+            }
             @media screen and (max-width: 1024px) {
                 width: 90rem;
             }
@@ -1170,6 +1254,10 @@ body {
         margin-bottom: 7rem;
         // outline: 2px dashed green;
         align-items: flex-start;
+        @media screen and (max-width: 1366px) {
+            justify-content: space-evenly;
+            // align-items: center;
+        }
         @media screen and (max-width: 667px) {
             flex-flow: row wrap;
         }
@@ -1196,7 +1284,7 @@ body {
         overflow: hidden;
         border-radius: 50%;
         outline: none;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1366px) {
             width: 12rem;
             height: 12rem;
         }
@@ -1212,7 +1300,7 @@ body {
             background-position: -2.5rem 0rem;
             background-size: cover;
             transform: scale(1.1);
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1366px) {
                 width: 12rem;
                 height: 12rem;
                 background-size: 14rem 14rem;
@@ -1234,7 +1322,7 @@ body {
             background-size: cover;
             background-repeat: no-repeat;
             transform: scale(1.2);
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1366px) {
                 width: 12rem;
                 height: 12rem;
                 background-position: -7rem -1rem;
@@ -1254,7 +1342,7 @@ body {
             background-position: -2.5rem 0rem;
             background-size: cover;
             transform: scale(1);
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1366px) {
                 width: 12rem;
                 height: 12rem;
             }
@@ -1300,6 +1388,9 @@ body {
         line-height: 2.8rem;
         color: #444;
         font-weight: 400;
+        @media screen and (max-width: 1366px) {
+            width: 30rem;
+        }
         @media screen and (max-width: 1024px) {
             width: 24rem;
             margin-left: 1.5rem;
@@ -1340,6 +1431,13 @@ body {
         position: absolute;
         top: 111.5rem;
         left: 66.2rem;
+        @media screen and (max-width: 1366px) {
+            background-size: contain;
+            width: 14rem;
+            height: 10rem;
+            top: 100rem;
+            left: 9rem;
+        }
         @media screen and (max-width: 1024px) {
             top: 160rem;
             left: 7.5rem;
@@ -1373,6 +1471,13 @@ body {
         top: 111.5rem;
         left: 106.2rem;
         background-repeat: no-repeat;
+        @media screen and (max-width: 1366px) {
+            background-size: contain;
+            width: 14rem;
+            height: 10rem;
+            top: 100rem;
+            left: 49.5rem;
+        }
         @media screen and (max-width: 1024px) {
             top: 160rem;
             left: 35.2rem;
@@ -1406,6 +1511,13 @@ body {
         top: 111.5rem;
         left: 147.5rem;
         background-repeat: no-repeat;
+        @media screen and (max-width: 1366px) {
+            background-size: contain;
+            width: 14rem;
+            height: 10rem;
+            top: 100rem;
+            left: 91.5rem;
+        }
         @media screen and (max-width: 1024px) {
             top: 160rem;
             left: 65.5rem;
