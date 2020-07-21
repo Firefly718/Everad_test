@@ -591,6 +591,9 @@ body {
         border: .7rem solid #a8ca3f;
         border-radius: 1.5rem;
         z-index: 10;
+        @media screen and (max-width: 1366px) {
+            margin-left: 2rem;
+        }
         @media screen and (max-width: 1024px) {
             margin: 5rem auto 0 auto;
             width: 60rem;
